@@ -1,0 +1,78 @@
+fileVersion: 1
+id: 69486871-8bec-4faf-8628-8eeb7129cfbb
+name: STG_NOAA_WEATHER_STATION_INDEX_NOAA_WEATHER_METRICS_TIMESERIES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 880fa282-8e92-4b6c-aa74-956c376194c2
+          stepCounter: 69486871-8bec-4faf-8628-8eeb7129cfbb
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 78b34c86-3c62-460a-8104-5549c22bc333
+                stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f162f7a8-18d6-4e51-83b4-de34678f4f1f
+          stepCounter: 69486871-8bec-4faf-8628-8eeb7129cfbb
+        config: {}
+        dataType: NUMBER(38,6)
+        description: ""
+        name: AVG_VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b45e8eaf-004b-4599-a299-b795ba903e7e
+                stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+            transform: AVG("STG_NOAA_WEATHER_METRICS_TIMESERIES"."VALUE")
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: STG_NOAA_WEATHER_METRICS_TIMESERIES
+          - locationName: SOURCE
+            nodeName: STG_NOAA_WEATHER_STATION_INDEX
+        join:
+          joinCondition: |-
+            FROM {{ ref('SOURCE', 'STG_NOAA_WEATHER_STATION_INDEX') }} "STG_NOAA_WEATHER_STATION_INDEX"
+            INNER JOIN {{ ref('SOURCE', 'STG_NOAA_WEATHER_METRICS_TIMESERIES') }} "STG_NOAA_WEATHER_METRICS_TIMESERIES"
+            ON "STG_NOAA_WEATHER_STATION_INDEX"."NOAA_WEATHER_STATION_ID" = "STG_NOAA_WEATHER_METRICS_TIMESERIES"."NOAA_WEATHER_STATION_ID"
+            
+            WHERE
+                "STG_NOAA_WEATHER_STATION_INDEX"."STATE_NAME" = 'Florida'
+                AND STG_NOAA_WEATHER_METRICS_TIMESERIES."VARIABLE" = 'precipitation'
+                AND STG_NOAA_WEATHER_METRICS_TIMESERIES."DATE" >= DATEADD(DAY, -365, CURRENT_DATE())
+            GROUP BY STG_NOAA_WEATHER_METRICS_TIMESERIES."DATE";
+        name: STG_NOAA_WEATHER_STATION_INDEX_NOAA_WEATHER_METRICS_TIMESERIES
+        noLinkRefs: []
+  name: STG_NOAA_WEATHER_STATION_INDEX_NOAA_WEATHER_METRICS_TIMESERIES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

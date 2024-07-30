@@ -1,0 +1,1178 @@
+fileVersion: 1
+id: 07fe7e62-6679-40bd-a079-21debdf24899
+name: FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: null
+  locationName: SOURCE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87f31b52-bc5c-499b-9db5-b9270218c665
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65b7f16f-f1fa-4a33-b6fe-009b8692727d
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: BUILDING_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84a455bc-8163-41f4-8934-0d91a71fb04d
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OCCUPANCY_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b23ce29-77f1-4236-b53a-987ffb229ba5
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UNITS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b8324d4-4554-4e69-9c0d-37fe4a3f1dda
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EVENT_DESIGNATION_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee020ff1-6601-47c0-bc4f-4d3a249775f9
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FICO_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aaf8e60c-c323-4348-8e49-82ab9e01a09a
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: FLOOD_EVENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 431303a9-85d9-4f83-b892-72de02b48830
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: FLOOD_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d33782f5-fbe6-4674-9c19-72faab44ef10
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FLOOD_WATER_DURATION_HOURS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 607cecac-d2df-4842-804a-cd74233bb026
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FLOOD_WATER_DEPTH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2cd8062-4bca-4a44-8916-36fd481ed128
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CAUSE_OF_DAMAGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4794d93-e4b7-422e-a441-0650997223f6
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DATE_OF_LOSS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13ce8675-c9a6-4754-9b12-74ef630a02e4
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BUILDING_PROPERTY_VALUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0867961b-989d-4894-a8fb-802b741183df
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: BUILDING_DAMAGE_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 942bf2e7-9c0b-461d-9ed8-fd94b7f27b10
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: AMOUNT_PAID_ON_BUILDING_CLAIM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c958ee08-1f79-46c5-bbda-aa43c79b066f
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: NET_BUILDING_PAYMENT_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6db4412b-52fb-4014-9a48-5e85a9912bbd
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NON_PAYMENT_REASON_BUILDING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e00382e-9c39-454f-b21c-e2b115e7735e
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CONTENTS_PROPERTY_VALUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 603ccc17-6929-437a-998b-fb0b7fa822be
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: CONTENTS_DAMAGE_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef54c82e-88aa-4518-9a51-4df8971f0f26
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CONTENTS_REPLACEMENT_COST
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 722324ed-7bfa-4d1e-96ca-89fed0345566
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: AMOUNT_PAID_ON_CONTENTS_CLAIM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a101037f-073a-4b30-a782-90a8c2b936e6
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: NET_CONTENTS_PAYMENT_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31fa2d9c-c6d7-41e0-8efa-0db0fdad6970
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NON_PAYMENT_REASON_CONTENTS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05475a40-4770-4d28-9658-23aea6bb2be1
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: AMOUNT_PAID_ON_INCREASED_COST_OF_COMPLIANCE_CLAIM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31c6d3a4-5940-4370-a97c-161479b10c33
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ICC_COVERAGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2821979e-fa19-4568-8878-bfc6cc01a4db
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: NET_ICC_PAYMENT_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e948805e-e97b-4bc1-b915-ccfeaed5f88d
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: REPLACEMENT_COST_BASIS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 968639a6-21ae-4f28-93e2-567f1fbcd7c8
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: TOTAL_BUILDING_INSURANCE_COVERAGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75d0ca13-ff1c-4bfb-800d-4f26683721aa
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(5,0)
+        defaultValue: ""
+        description: ""
+        name: BUILDING_DEDUCTIBLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf691d1e-b913-4a16-aa95-afc9fe5dfaae
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: TOTAL_CONTENTS_INSURANCE_COVERAGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e96563a6-1c90-49cb-aa28-fa489ea36e00
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(5,0)
+        defaultValue: ""
+        description: ""
+        name: CONTENTS_DEDUCTIBLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9f5444c-3511-4ea1-8156-eb2a1a18fe4b
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: POLICY_COUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 918673cb-0846-45a0-ad82-432dd33b1cd3
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BUILDING_REPLACEMENT_COST
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08cdb474-bc58-42f3-bec9-ae7824cec164
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: ARRAY
+        defaultValue: ""
+        description: ""
+        name: PROPERTY_INDICATORS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a85622ca-6d04-4da9-a81d-de1c8f1f1d50
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: POLICY_RATING_METHOD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 516e2d45-369c-4fe9-95da-ec3dedd6e446
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: ORIGINAL_CONSTRUCTION_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a065689-9d2e-42ca-9318-e97a435e14b3
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: ORIGINAL_FLOOD_POLICY_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d339a5d-bab4-4d48-a5cd-24dcaafa56de
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NUMBER_OF_FLOORS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1837d5e9-beb4-4268-887d-1d2708facfda
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: BASE_FLOOD_ELEVATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fa24e0e-9aee-42f0-a4ec-6e1423938808
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LOWEST_FLOOR_ELEVATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfc851f1-167a-47b7-9370-a4e85e3bee1c
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ELEVATION_DIFFERENCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7466141d-d3ae-462d-9efd-a06549e262e0
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CURRENT_FLOOD_ZONE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37573436-14e3-480b-9a65-c3ea9848ff4d
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: POLICY_RATED_FLOOD_ZONE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d53bfdf-fedc-4860-a89e-2c789a556ce6
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CONTENT_LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2980b508-c3e5-4207-9e43-f68b9f9d905d
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LOWEST_ADJACENT_GRADE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dd57dd3-37a1-4fdf-829e-22c577cf3aec
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CONDOMINIUM_COVERAGE_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2c96699-a318-4196-949c-13327300c93f
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COMMUNITY_RATING_SYSTEM_CLASS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45534ad7-9758-424b-8dc3-7212cc12f68f
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DISASTER_ASSISTANCE_COVERAGE_REQUIRED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8247b18-222f-425a-93cd-2426fb6c56f1
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: BASEMENT_ENCLOSURE_CRAWLSPACE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9d58741-7575-4cdc-ae13-40cab036b005
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OBSTRUCTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: adde948f-2bd3-4af5-88b5-feaa27577c37
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NFIP_RATED_COMMUNITY_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6300c51-a35c-4399-8e31-dfd4be01bac8
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NFIP_COMMUNITY_NUMBER_CURRENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffaf37d9-d3e7-45fc-815b-b52dea916eff
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NFIP_COMMUNITY_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d55cf5d8-5c94-4c32-8374-e0578affcd85
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STATE_GEO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d06ef81-ccea-4eaf-bc5b-1eb7f1b6a326
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COUNTY_GEO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 713a2b42-9eba-4902-8d82-82502423538c
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ZIP_GEO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6030628b-1634-4c4a-8f09-57dc0dd82357
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CENSUS_TRACT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab4d50f3-bfee-4930-862a-53873b584e4b
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CENSUS_BLOCK_GROUP_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa1f87ae-5df5-44b1-b4b5-550c7f616bc8
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c171e54b-68c9-4386-94c1-6c1f923a7a97
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LATITUDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03501b55-7dba-4971-8e8b-71772fcc956a
+          stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LONGITUDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SOURCE', 'FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX') }}
+  name: FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+  schema: ""
+  sqlType: Source
+  table: FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+  type: sourceInput
+type: Node

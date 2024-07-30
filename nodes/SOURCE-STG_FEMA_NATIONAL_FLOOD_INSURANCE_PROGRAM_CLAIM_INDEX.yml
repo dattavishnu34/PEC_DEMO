@@ -1,0 +1,893 @@
+fileVersion: 1
+id: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+name: STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8fa7958-5238-46a9-924c-b180db135eff
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 87f31b52-bc5c-499b-9db5-b9270218c665
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8eea38cf-4042-4b87-9c62-f83f871ff9a7
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: BUILDING_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65b7f16f-f1fa-4a33-b6fe-009b8692727d
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f3e948d-2a10-4dd7-b3d9-f01249c7f691
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: OCCUPANCY_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84a455bc-8163-41f4-8934-0d91a71fb04d
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c52c1d4a-0936-438a-bea7-3b6cfa095324
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNITS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b23ce29-77f1-4236-b53a-987ffb229ba5
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc417999-730b-4ee3-b75b-16be96455a62
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EVENT_DESIGNATION_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b8324d4-4554-4e69-9c0d-37fe4a3f1dda
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 480fa04f-826a-4390-bef0-cdefcfd9ea31
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FICO_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee020ff1-6601-47c0-bc4f-4d3a249775f9
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 792adf5e-15a7-49d1-bbba-4ec34309bda0
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FLOOD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aaf8e60c-c323-4348-8e49-82ab9e01a09a
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e4860e8-c9a6-4deb-8ee5-8737d7227068
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FLOOD_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 431303a9-85d9-4f83-b892-72de02b48830
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ea4d39a-c7e7-4a64-b6cf-e4a61439c3f9
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FLOOD_WATER_DURATION_HOURS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d33782f5-fbe6-4674-9c19-72faab44ef10
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3152331e-02ed-4e6e-a967-d71efd784938
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FLOOD_WATER_DEPTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 607cecac-d2df-4842-804a-cd74233bb026
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b757b5e-7d1e-41f5-b141-d8f83dd65e90
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CAUSE_OF_DAMAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2cd8062-4bca-4a44-8916-36fd481ed128
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2839c11-063e-441f-97a6-ad92cd4547ff
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE_OF_LOSS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4794d93-e4b7-422e-a441-0650997223f6
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6513e57-1fc2-44cc-8f66-c429edf9df5e
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BUILDING_PROPERTY_VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13ce8675-c9a6-4754-9b12-74ef630a02e4
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d1003e1-3607-4816-b2ef-fc364b9b4d76
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: BUILDING_DAMAGE_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0867961b-989d-4894-a8fb-802b741183df
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e0fad4d-5af1-4f80-bccc-88f428361be0
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT_PAID_ON_BUILDING_CLAIM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 942bf2e7-9c0b-461d-9ed8-fd94b7f27b10
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 818030c2-f005-4177-b0e0-d60e37afdacf
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: NET_BUILDING_PAYMENT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c958ee08-1f79-46c5-bbda-aa43c79b066f
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99bd3911-de5e-4789-bea9-50a2c46dc9b9
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NON_PAYMENT_REASON_BUILDING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6db4412b-52fb-4014-9a48-5e85a9912bbd
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13ca9a8d-b2d4-421a-8a5a-15468fdbdd6d
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CONTENTS_PROPERTY_VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7e00382e-9c39-454f-b21c-e2b115e7735e
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb97d045-8bb4-4d6a-afbd-9602b71d7323
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: CONTENTS_DAMAGE_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 603ccc17-6929-437a-998b-fb0b7fa822be
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 936eb20c-a994-4c80-8326-fb6c6f574917
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CONTENTS_REPLACEMENT_COST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef54c82e-88aa-4518-9a51-4df8971f0f26
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e71ac51-10e5-49ee-a4d0-81cc5fd5fc7f
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT_PAID_ON_CONTENTS_CLAIM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 722324ed-7bfa-4d1e-96ca-89fed0345566
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee194a18-ee88-4b12-9e49-aa294208f16b
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: NET_CONTENTS_PAYMENT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a101037f-073a-4b30-a782-90a8c2b936e6
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b50980ef-9481-4619-bfc0-ba13ba800b80
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NON_PAYMENT_REASON_CONTENTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 31fa2d9c-c6d7-41e0-8efa-0db0fdad6970
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48f1bf3c-4884-4cea-ab9e-2c199ac554db
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT_PAID_ON_INCREASED_COST_OF_COMPLIANCE_CLAIM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05475a40-4770-4d28-9658-23aea6bb2be1
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0579d2a7-0634-4e19-9336-902b47310137
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ICC_COVERAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 31c6d3a4-5940-4370-a97c-161479b10c33
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12e04975-41c8-469e-89d1-0b656ffea324
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: NET_ICC_PAYMENT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2821979e-fa19-4568-8878-bfc6cc01a4db
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98043d47-5b57-4dcb-b574-44ef974d0504
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: REPLACEMENT_COST_BASIS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e948805e-e97b-4bc1-b915-ccfeaed5f88d
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1aae93f2-f32c-47d2-8025-fdb1e5dd709f
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TOTAL_BUILDING_INSURANCE_COVERAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 968639a6-21ae-4f28-93e2-567f1fbcd7c8
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bfdcbaa-c34e-48e9-8360-192019395a61
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(5,0)
+        description: ""
+        name: BUILDING_DEDUCTIBLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75d0ca13-ff1c-4bfb-800d-4f26683721aa
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ec68135-b0e9-431d-a00a-56a3d3de6349
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TOTAL_CONTENTS_INSURANCE_COVERAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf691d1e-b913-4a16-aa95-afc9fe5dfaae
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9aa833b7-d989-4661-9a62-40c8b2fda574
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(5,0)
+        description: ""
+        name: CONTENTS_DEDUCTIBLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e96563a6-1c90-49cb-aa28-fa489ea36e00
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a78c73c-fa8b-4671-b263-36c072696411
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: POLICY_COUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9f5444c-3511-4ea1-8156-eb2a1a18fe4b
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3db65d53-5f79-4c0c-96a1-1f820671bb61
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BUILDING_REPLACEMENT_COST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 918673cb-0846-45a0-ad82-432dd33b1cd3
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1bba5975-01df-45ea-a7a9-43602b55f7f8
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: ARRAY
+        description: ""
+        name: PROPERTY_INDICATORS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 08cdb474-bc58-42f3-bec9-ae7824cec164
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7d2a61c-15d9-4f50-87f8-0f109b96aa8f
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: POLICY_RATING_METHOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a85622ca-6d04-4da9-a81d-de1c8f1f1d50
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 356c5f47-e650-4edf-9ff9-a59e3bdfa859
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: DATE
+        description: ""
+        name: ORIGINAL_CONSTRUCTION_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 516e2d45-369c-4fe9-95da-ec3dedd6e446
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78676a73-0352-4bae-a119-605459ee80ad
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: DATE
+        description: ""
+        name: ORIGINAL_FLOOD_POLICY_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a065689-9d2e-42ca-9318-e97a435e14b3
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: baf32e04-9121-4cd7-a78a-611e5ea20d2e
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NUMBER_OF_FLOORS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d339a5d-bab4-4d48-a5cd-24dcaafa56de
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d30497c-5d8a-43f6-b27c-4a34aab80500
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: BASE_FLOOD_ELEVATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1837d5e9-beb4-4268-887d-1d2708facfda
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50425145-10b7-4f2e-aa38-1df734c9cc34
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: LOWEST_FLOOR_ELEVATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fa24e0e-9aee-42f0-a4ec-6e1423938808
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d83b15e-aefb-4a48-a3d4-c8d7334884b3
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ELEVATION_DIFFERENCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bfc851f1-167a-47b7-9370-a4e85e3bee1c
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee55cb11-ab6c-4052-9bd2-76eaeaa05108
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CURRENT_FLOOD_ZONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7466141d-d3ae-462d-9efd-a06549e262e0
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdba0465-2a4f-4b82-8ccd-9f3299a48fbe
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: POLICY_RATED_FLOOD_ZONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37573436-14e3-480b-9a65-c3ea9848ff4d
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ff2362a-955e-41ae-bbd7-ed75fe6b40a8
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CONTENT_LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d53bfdf-fedc-4860-a89e-2c789a556ce6
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d90800c3-4c9a-4632-94e1-4e180fd80f4b
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: LOWEST_ADJACENT_GRADE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2980b508-c3e5-4207-9e43-f68b9f9d905d
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0f8295e-7ee5-43f3-ac0d-8ed8077dbf93
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CONDOMINIUM_COVERAGE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dd57dd3-37a1-4fdf-829e-22c577cf3aec
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 981a0628-0a93-4f31-b3b6-190a3d0749fa
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COMMUNITY_RATING_SYSTEM_CLASS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b2c96699-a318-4196-949c-13327300c93f
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f520a7c6-2079-49b9-8837-dc3070ca5106
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DISASTER_ASSISTANCE_COVERAGE_REQUIRED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45534ad7-9758-424b-8dc3-7212cc12f68f
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b887b300-34f7-426a-b4ab-bb04814d4ece
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: BASEMENT_ENCLOSURE_CRAWLSPACE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8247b18-222f-425a-93cd-2426fb6c56f1
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67e672f2-4834-4d28-836f-fbc439ddc2ed
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: OBSTRUCTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9d58741-7575-4cdc-ae13-40cab036b005
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a33a586-c372-4f53-9d9c-f9a219e22389
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NFIP_RATED_COMMUNITY_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: adde948f-2bd3-4af5-88b5-feaa27577c37
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ca52c48-0263-4d97-8c04-15f562c3ebc1
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NFIP_COMMUNITY_NUMBER_CURRENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c6300c51-a35c-4399-8e31-dfd4be01bac8
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc8233fa-a184-439e-92ad-f54f63526e58
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NFIP_COMMUNITY_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ffaf37d9-d3e7-45fc-815b-b52dea916eff
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74b96f0a-83d9-4597-ab92-17d61e9c5b87
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATE_GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d55cf5d8-5c94-4c32-8374-e0578affcd85
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 714ad164-5e91-4bef-bc2e-c3f9ebefe2da
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COUNTY_GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d06ef81-ccea-4eaf-bc5b-1eb7f1b6a326
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e5e0b75-50e7-48c3-9f4f-0aef94e2fa90
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ZIP_GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 713a2b42-9eba-4902-8d82-82502423538c
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf493501-6535-428c-877d-93885a0a36da
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CENSUS_TRACT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6030628b-1634-4c4a-8f09-57dc0dd82357
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e12dbac-061c-4390-a2e0-df924cae90ea
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CENSUS_BLOCK_GROUP_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab4d50f3-bfee-4930-862a-53873b584e4b
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1dfe39b1-2258-446c-b896-9fcecb814caa
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa1f87ae-5df5-44b1-b4b5-550c7f616bc8
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65317fbc-3040-44ab-8565-14362c8a15cc
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: LATITUDE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c171e54b-68c9-4386-94c1-6c1f923a7a97
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8e3ad53-afca-4b48-94c0-cfa57b9c7197
+          stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: LONGITUDE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03501b55-7dba-4971-8e8b-71772fcc956a
+                stepCounter: 07fe7e62-6679-40bd-a079-21debdf24899
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX') }} "FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"
+        name: STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+        noLinkRefs: []
+  name: STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

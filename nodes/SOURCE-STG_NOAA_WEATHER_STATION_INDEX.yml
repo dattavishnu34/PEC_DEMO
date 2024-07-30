@@ -1,0 +1,249 @@
+fileVersion: 1
+id: 0928f6dc-336b-484d-9174-e0fa4655580e
+name: STG_NOAA_WEATHER_STATION_INDEX
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8012862-7f03-4cb6-8abd-fb7bd570f5e2
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NOAA_WEATHER_STATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b2bb7c6-b992-4b90-99de-1483f8dffe17
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f404d0b5-4812-4de4-854d-cf88432b28f3
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NOAA_WEATHER_STATION_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c351b92d-6f82-46ef-bacf-227e665be2e9
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f1c061e-fde3-4f69-bccd-dfa7ea85fb59
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COUNTRY_GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b9b350b-783c-47f9-86c9-7e521d992cfb
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3aeb962a-7297-4598-926a-68da3d8b868b
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COUNTRY_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5205e87a-e687-4413-953e-9078fd517db8
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b517f18-9fd6-4851-bd5f-2c0fbe144863
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATE_GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7b64664-1085-43ee-8051-560bac298434
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 15afab34-8499-4d0d-8035-3e971897f813
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b9c2034-20a8-4873-9598-c765a9830652
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da3a7296-e7fb-4cb8-a2da-bccca6eb8683
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ZIP_GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8016c3df-f8d6-4eaf-aae9-597d1763c337
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 828ec060-6534-4ec9-ace8-2053234e5103
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ZIP_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 266c61c3-cc9b-4c24-afaf-2b73136a8ec9
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45622fc5-7d0a-46c6-affd-0992f5e25ace
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: LATITUDE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 27e7450c-5df5-43db-82fb-38fde0fc9f55
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c79f3749-01cb-41ce-a749-4ea12fd937ac
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: LONGITUDE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92d97c66-9e89-4ba4-9461-d05812141101
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1c59a39-03d8-4fb6-b122-290ca5c1437a
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: ELEVATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e34da6c-1e15-4896-a826-263ffb9cc1f4
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7938f3e1-002e-48ee-aa12-10cda5e237c3
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WEATHER_STATION_NETWORK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 142bf9fa-8c0f-479e-b63c-6e855edeca1c
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 669312ec-5d78-4756-b274-3fba2abb6465
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: ARRAY
+        description: ""
+        name: ASSOCIATED_NETWORKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07b221af-b433-4905-bbd4-acc2408d1eb6
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6f904e2-d1c9-4186-a829-4435b2891d9e
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WORLD_METEOROLOGICAL_ORGANIZATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 80877880-9375-41b6-bff2-2244fba427e0
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3b81a04-711c-40db-96af-da0ebf2f91ff
+          stepCounter: 0928f6dc-336b-484d-9174-e0fa4655580e
+        config: {}
+        dataType: ARRAY
+        description: ""
+        name: SOURCE_DATA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f39a8481-32d9-4856-ac45-78c804f426fc
+                stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: NOAA_WEATHER_STATION_INDEX
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'NOAA_WEATHER_STATION_INDEX') }} "NOAA_WEATHER_STATION_INDEX"
+        name: STG_NOAA_WEATHER_STATION_INDEX
+        noLinkRefs: []
+  name: STG_NOAA_WEATHER_STATION_INDEX
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

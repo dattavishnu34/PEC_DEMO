@@ -1,0 +1,137 @@
+fileVersion: 1
+id: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+name: STG_NOAA_WEATHER_METRICS_TIMESERIES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69ba159f-7159-4329-8f49-e4cdff6eb095
+          stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NOAA_WEATHER_STATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 301e98ba-a950-468b-9ada-45c60f8b6d09
+                stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cad7ff9-5b64-47be-b5b3-f43c3f378302
+          stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: VARIABLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9949ce07-2452-488a-b2bb-661a2bc74d02
+                stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95567ed5-4ecb-4923-a4d8-c04e41d79e19
+          stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: VARIABLE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98eb3d4c-3c39-4b98-9fe4-6445c9bda5bd
+                stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78b34c86-3c62-460a-8104-5549c22bc333
+          stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: adc5eea3-0fe7-4e94-9e25-823f5716ad5d
+                stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f574e4d-8a30-4587-9bb8-929f5d624389
+          stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DATETIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f0dcbd8-8b34-41c9-9996-c6196eae2a1f
+                stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b45e8eaf-004b-4599-a299-b795ba903e7e
+          stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+        config: {}
+        dataType: NUMBER(38,6)
+        description: ""
+        name: VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c97f0b65-7323-41bc-b429-8b95629bd0b6
+                stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86622ad3-5c5b-442e-8bc8-f96adbd52a7e
+          stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: UNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d624838-9aca-4be2-8268-b70b7d61f254
+                stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: NOAA_WEATHER_METRICS_TIMESERIES
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'NOAA_WEATHER_METRICS_TIMESERIES') }} "NOAA_WEATHER_METRICS_TIMESERIES"
+        name: STG_NOAA_WEATHER_METRICS_TIMESERIES
+        noLinkRefs: []
+  name: STG_NOAA_WEATHER_METRICS_TIMESERIES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

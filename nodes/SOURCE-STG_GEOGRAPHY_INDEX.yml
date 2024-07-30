@@ -1,0 +1,151 @@
+fileVersion: 1
+id: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+name: STG_GEOGRAPHY_INDEX
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a83aa1a-7d45-479d-84fd-7350417cd963
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d150e27-35a1-40da-9fdb-56bc16388aad
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7af5fb3-8c65-4d5f-8f56-c402ff06d709
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: GEO_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fc965be5-ca95-4cfd-964b-02dd25cb0edf
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4628c3e2-778d-4661-994e-d1c0ddbff14d
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: LEVEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f76e6cb-d14b-42b1-8933-23cb6f17fc3f
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2a7b2fb-6ea3-473d-8cc1-a88884ceefcd
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ISO_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e399c8f0-9386-46d1-bc72-0db51b931837
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88fbccc0-eb50-41bc-ad2c-045af5e14257
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ISO_ALPHA2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 348b6572-73cb-456e-ae3c-7de3c4a913a4
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a35a616c-21f7-4f29-a652-b93e8e64a3a2
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ISO_ALPHA3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1a91bec-e1b1-4b85-bff4-1ac1dc141898
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11f944c8-f827-45df-8fe1-0655787dc136
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ISO_NUMERIC_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c6561aed-70dc-4c47-bb25-9f1490d2e261
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71cc946c-4956-4b29-bb48-16312b3c006d
+          stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ISO_3166_2_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30effd31-3ba1-4190-a40c-57e517bdee57
+                stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: GEOGRAPHY_INDEX
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'GEOGRAPHY_INDEX') }} "GEOGRAPHY_INDEX"
+        name: STG_GEOGRAPHY_INDEX
+        noLinkRefs: []
+  name: STG_GEOGRAPHY_INDEX
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

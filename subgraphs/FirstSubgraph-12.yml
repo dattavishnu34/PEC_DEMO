@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "12"
+name: First Subgraph
+steps:
+  - 025f52fe-9c27-47f7-9e4f-d990878b94b1
+  - 871b2b77-a96c-46d9-b630-0f9f683d891f
+  - d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+type: Subgraph
+version: 1

@@ -1,0 +1,103 @@
+fileVersion: 1
+id: 871b2b77-a96c-46d9-b630-0f9f683d891f
+name: STG_OUR_WORLD_IN_DATA_TIMESERIES_GEOGRAPHY_INDEX
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f18cc6b6-e45f-40f6-a460-d94aec1f65df
+          stepCounter: 871b2b77-a96c-46d9-b630-0f9f683d891f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: GEO_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7af5fb3-8c65-4d5f-8f56-c402ff06d709
+                stepCounter: d4b75f5d-6d63-4716-81b7-5e80f9eaaa3b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 978a642e-40d5-4e95-9d40-22e1f8cb6f6f
+          stepCounter: 871b2b77-a96c-46d9-b630-0f9f683d891f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: VARIABLE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10e9c307-f70c-40eb-9391-8b6f8c16d773
+                stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3dc03c8-24b6-4cab-bec8-ba0bb1fd3ec7
+          stepCounter: 871b2b77-a96c-46d9-b630-0f9f683d891f
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 70046b81-77f8-4c34-af91-ea140eb57062
+                stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7090ea77-e826-431b-a59b-de9da0161e73
+          stepCounter: 871b2b77-a96c-46d9-b630-0f9f683d891f
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4eefdb47-0ad7-4c92-8e0e-56b19eb2caa7
+                stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: STG_GEOGRAPHY_INDEX
+          - locationName: SOURCE
+            nodeName: STG_OUR_WORLD_IN_DATA_TIMESERIES
+        join:
+          joinCondition: |-
+            FROM {{ ref('SOURCE', 'STG_OUR_WORLD_IN_DATA_TIMESERIES') }} "STG_OUR_WORLD_IN_DATA_TIMESERIES"
+            INNER JOIN {{ ref('SOURCE', 'STG_GEOGRAPHY_INDEX') }} "STG_GEOGRAPHY_INDEX"
+            ON "STG_OUR_WORLD_IN_DATA_TIMESERIES"."GEO_ID" = "STG_GEOGRAPHY_INDEX"."GEO_ID"
+            WHERE "STG_OUR_WORLD_IN_DATA_TIMESERIES"."VARIABLE_NAME" = 'Carbon intensity'
+              AND "STG_GEOGRAPHY_INDEX"."GEO_NAME" IN ('United States', 'United Kingdom', 'European Union')
+            ORDER BY "STG_OUR_WORLD_IN_DATA_TIMESERIES"."DATE";
+        name: STG_OUR_WORLD_IN_DATA_TIMESERIES_GEOGRAPHY_INDEX
+        noLinkRefs: []
+  name: STG_OUR_WORLD_IN_DATA_TIMESERIES_GEOGRAPHY_INDEX
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

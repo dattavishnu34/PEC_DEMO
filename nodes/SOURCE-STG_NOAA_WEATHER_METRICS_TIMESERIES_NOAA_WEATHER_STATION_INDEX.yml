@@ -1,0 +1,81 @@
+fileVersion: 1
+id: e4430dd7-8463-4b6e-a244-4e6e39d1d357
+name: STG_NOAA_WEATHER_METRICS_TIMESERIES_NOAA_WEATHER_STATION_INDEX
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa2b2800-134a-4233-afab-9b137d2865c9
+          stepCounter: e4430dd7-8463-4b6e-a244-4e6e39d1d357
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 78b34c86-3c62-460a-8104-5549c22bc333
+                stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+            transform: YEAR("STG_NOAA_WEATHER_METRICS_TIMESERIES"."DATE")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 169e2358-dfbb-477d-b37c-cfd0a0a04e57
+          stepCounter: e4430dd7-8463-4b6e-a244-4e6e39d1d357
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: count_severe_weather_days
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 78b34c86-3c62-460a-8104-5549c22bc333
+                stepCounter: a9fd9473-a2e0-4b65-b50d-d1940bcd6a80
+            transform: COUNT(DISTINCT "STG_NOAA_WEATHER_METRICS_TIMESERIES"."DATE")
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: STG_NOAA_WEATHER_METRICS_TIMESERIES
+          - locationName: SOURCE
+            nodeName: STG_NOAA_WEATHER_STATION_INDEX
+        join:
+          joinCondition: |
+            FROM {{ ref('SOURCE', 'STG_NOAA_WEATHER_METRICS_TIMESERIES') }} "STG_NOAA_WEATHER_METRICS_TIMESERIES"
+            INNER JOIN {{ ref('SOURCE', 'STG_NOAA_WEATHER_STATION_INDEX') }} "STG_NOAA_WEATHER_STATION_INDEX"
+            ON "STG_NOAA_WEATHER_METRICS_TIMESERIES"."NOAA_WEATHER_STATION_ID" = "STG_NOAA_WEATHER_STATION_INDEX"."NOAA_WEATHER_STATION_ID"
+            
+            WHERE 
+                "STG_NOAA_WEATHER_METRICS_TIMESERIES"."VARIABLE_NAME" = 'Weather Type: Tornado, Waterspout, or Funnel Cloud'
+                AND "STG_NOAA_WEATHER_STATION_INDEX"."STATE_NAME" = 'Florida'
+                AND "STG_NOAA_WEATHER_METRICS_TIMESERIES"."VALUE" = 1
+                AND "STG_NOAA_WEATHER_METRICS_TIMESERIES"."DATE" >= '2010-01-01'
+            GROUP BY year
+            ORDER BY year;
+            
+        name: STG_NOAA_WEATHER_METRICS_TIMESERIES_NOAA_WEATHER_STATION_INDEX
+        noLinkRefs: []
+  name: STG_NOAA_WEATHER_METRICS_TIMESERIES_NOAA_WEATHER_STATION_INDEX
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

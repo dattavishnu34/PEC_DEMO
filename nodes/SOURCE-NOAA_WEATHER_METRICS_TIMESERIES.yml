@@ -1,0 +1,152 @@
+fileVersion: 1
+id: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+name: NOAA_WEATHER_METRICS_TIMESERIES
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: null
+  locationName: SOURCE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 301e98ba-a950-468b-9ada-45c60f8b6d09
+          stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NOAA_WEATHER_STATION_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9949ce07-2452-488a-b2bb-661a2bc74d02
+          stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: VARIABLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98eb3d4c-3c39-4b98-9fe4-6445c9bda5bd
+          stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: VARIABLE_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: adc5eea3-0fe7-4e94-9e25-823f5716ad5d
+          stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f0dcbd8-8b34-41c9-9996-c6196eae2a1f
+          stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATETIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c97f0b65-7323-41bc-b429-8b95629bd0b6
+          stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+        config: {}
+        dataType: NUMBER(38,6)
+        defaultValue: ""
+        description: ""
+        name: VALUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d624838-9aca-4be2-8268-b70b7d61f254
+          stepCounter: a9a951c9-14b2-45c8-8a69-b97fc2ddb2f5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: UNIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SOURCE', 'NOAA_WEATHER_METRICS_TIMESERIES') }}
+  name: NOAA_WEATHER_METRICS_TIMESERIES
+  schema: ""
+  sqlType: Source
+  table: NOAA_WEATHER_METRICS_TIMESERIES
+  type: sourceInput
+type: Node

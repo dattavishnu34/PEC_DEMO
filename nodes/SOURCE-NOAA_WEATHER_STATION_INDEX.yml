@@ -1,0 +1,304 @@
+fileVersion: 1
+id: 4698a026-a82c-4967-afed-1a8ce4d6f039
+name: NOAA_WEATHER_STATION_INDEX
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: null
+  locationName: SOURCE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b2bb7c6-b992-4b90-99de-1483f8dffe17
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NOAA_WEATHER_STATION_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c351b92d-6f82-46ef-bacf-227e665be2e9
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NOAA_WEATHER_STATION_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b9b350b-783c-47f9-86c9-7e521d992cfb
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COUNTRY_GEO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5205e87a-e687-4413-953e-9078fd517db8
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COUNTRY_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7b64664-1085-43ee-8051-560bac298434
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STATE_GEO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b9c2034-20a8-4873-9598-c765a9830652
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STATE_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8016c3df-f8d6-4eaf-aae9-597d1763c337
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ZIP_GEO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 266c61c3-cc9b-4c24-afaf-2b73136a8ec9
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ZIP_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27e7450c-5df5-43db-82fb-38fde0fc9f55
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LATITUDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92d97c66-9e89-4ba4-9461-d05812141101
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LONGITUDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e34da6c-1e15-4896-a826-263ffb9cc1f4
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: ELEVATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 142bf9fa-8c0f-479e-b63c-6e855edeca1c
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: WEATHER_STATION_NETWORK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 07b221af-b433-4905-bbd4-acc2408d1eb6
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: ARRAY
+        defaultValue: ""
+        description: ""
+        name: ASSOCIATED_NETWORKS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80877880-9375-41b6-bff2-2244fba427e0
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: WORLD_METEOROLOGICAL_ORGANIZATION_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f39a8481-32d9-4856-ac45-78c804f426fc
+          stepCounter: 4698a026-a82c-4967-afed-1a8ce4d6f039
+        config: {}
+        dataType: ARRAY
+        defaultValue: ""
+        description: ""
+        name: SOURCE_DATA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SOURCE', 'NOAA_WEATHER_STATION_INDEX') }}
+  name: NOAA_WEATHER_STATION_INDEX
+  schema: ""
+  sqlType: Source
+  table: NOAA_WEATHER_STATION_INDEX
+  type: sourceInput
+type: Node

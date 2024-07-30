@@ -1,0 +1,123 @@
+fileVersion: 1
+id: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+name: STG_OUR_WORLD_IN_DATA_TIMESERIES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f771f644-b7e7-4fe3-8dc5-76c2718744d4
+          stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: GEO_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ca007111-4bb1-44ff-94f6-a30f9715ffca
+                stepCounter: 2be6ce05-cd47-4ee0-a3cf-8938e9a9e079
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab55b7c0-50a3-4a8c-84f1-776cb2253b39
+          stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: VARIABLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a3bb6ff-1013-4c02-93c1-3367752a2d02
+                stepCounter: 2be6ce05-cd47-4ee0-a3cf-8938e9a9e079
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10e9c307-f70c-40eb-9391-8b6f8c16d773
+          stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: VARIABLE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e20c5210-1ddb-48c5-83a5-c9c1dbc7b3fe
+                stepCounter: 2be6ce05-cd47-4ee0-a3cf-8938e9a9e079
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70046b81-77f8-4c34-af91-ea140eb57062
+          stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b97dc535-bbd4-4e64-bbb5-b6e4aad40bee
+                stepCounter: 2be6ce05-cd47-4ee0-a3cf-8938e9a9e079
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4eefdb47-0ad7-4c92-8e0e-56b19eb2caa7
+          stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b07e2fa1-2fbd-47b8-9034-0505b1f1aa55
+                stepCounter: 2be6ce05-cd47-4ee0-a3cf-8938e9a9e079
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 029f5415-c5b2-473e-8905-c413d403a725
+          stepCounter: 025f52fe-9c27-47f7-9e4f-d990878b94b1
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: UNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e754872-8de3-427b-8dc8-2ea1f7228889
+                stepCounter: 2be6ce05-cd47-4ee0-a3cf-8938e9a9e079
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: OUR_WORLD_IN_DATA_TIMESERIES
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'OUR_WORLD_IN_DATA_TIMESERIES') }} "OUR_WORLD_IN_DATA_TIMESERIES"
+        name: STG_OUR_WORLD_IN_DATA_TIMESERIES
+        noLinkRefs: []
+  name: STG_OUR_WORLD_IN_DATA_TIMESERIES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
