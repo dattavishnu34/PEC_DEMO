@@ -1,5 +1,11 @@
 fileVersion: 1
 id: "23"
-mappingDefinitions: {}
+mappingDefinitions:
+  SOURCE:
+    database: WEATHER_DATA_PEC
+    schema: DATA
+  WORK:
+    database: WEATHER_DATA_PEC
+    schema: QA
 name: QA
 type: Environment
