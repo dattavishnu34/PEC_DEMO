@@ -72,7 +72,7 @@ operation:
           - columnReferences:
               - columnCounter: e399c8f0-9386-46d1-bc72-0db51b931837
                 stepCounter: c88fa598-2a5c-421e-b54b-6b9b95c76491
-            transform: ""
+            transform: UPPER("GEOGRAPHY_INDEX"."ISO_NAME")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 88fbccc0-eb50-41bc-ad2c-045af5e14257
