@@ -1,0 +1,107 @@
+fileVersion: 1
+id: 1b49be02-2dbf-4568-9020-a9485fde0845
+name: STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX_GEOGRAPHY_INDEX
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57b328ec-4058-478a-af2a-c1a665f9675c
+          stepCounter: 1b49be02-2dbf-4568-9020-a9485fde0845
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: YEAR_OF_LOSS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2839c11-063e-441f-97a6-ad92cd4547ff
+                stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+            transform: YEAR("STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"."DATE_OF_LOSS")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1098c92-366f-42a9-9db5-3488f516fe92
+          stepCounter: 1b49be02-2dbf-4568-9020-a9485fde0845
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NFIP_COMMUNITY_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cc8233fa-a184-439e-92ad-f54f63526e58
+                stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7635b959-6a25-4ea7-9078-bc2eea7469d9
+          stepCounter: 1b49be02-2dbf-4568-9020-a9485fde0845
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: total_building_damage_amount
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d1003e1-3607-4816-b2ef-fc364b9b4d76
+                stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+            transform: SUM("STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"."BUILDING_DAMAGE_AMOUNT")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ac5388f-5e1b-4bc1-8dd5-9e080364a4c5
+          stepCounter: 1b49be02-2dbf-4568-9020-a9485fde0845
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: CONTENTS_DAMAGE_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb97d045-8bb4-4d6a-afbd-9602b71d7323
+                stepCounter: c8bc1e91-c297-4fbe-984d-e4e13584e7aa
+            transform: SUM("STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"."CONTENTS_DAMAGE_AMOUNT")
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX
+          - locationName: SOURCE
+            nodeName: STG_GEOGRAPHY_INDEX
+        join:
+          joinCondition: |-
+            FROM {{ ref('SOURCE', 'STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX') }} "STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"
+            LEFT JOIN {{ ref('SOURCE', 'STG_GEOGRAPHY_INDEX') }} "STG_GEOGRAPHY_INDEX"
+            ON "STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"."STATE_GEO_ID" = "STG_GEOGRAPHY_INDEX"."GEO_ID"
+            
+            
+            WHERE "STG_GEOGRAPHY_INDEX"."GEO_NAME" = 'New York' 
+                AND "STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"."NFIP_COMMUNITY_NAME" = 'City Of New York' 
+                AND YEAR_OF_LOSS >= YEAR(DATEADD(YEAR, -10, CURRENT_DATE()))
+            GROUP BY YEAR_OF_LOSS, "STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"."NFIP_COMMUNITY_NAME"
+            ORDER BY YEAR_OF_LOSS, "STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX"."NFIP_COMMUNITY_NAME";
+        name: STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX_GEOGRAPHY_INDEX
+        noLinkRefs: []
+  name: STG_FEMA_NATIONAL_FLOOD_INSURANCE_PROGRAM_CLAIM_INDEX_GEOGRAPHY_INDEX
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
